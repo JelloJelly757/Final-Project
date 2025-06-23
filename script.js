@@ -9,6 +9,17 @@ let gotoquizFunction = () =>{
 
 gotoquizFunction(); 
 
+let button3 = document.querySelector('[type="button3"]'); 
+
+let gotogalleryFunction = () =>{
+    if (button3) {
+        button3.addEventListener('click', () =>
+            window.location.href = "gallery.html")
+    }
+}; 
+
+gotogalleryFunction(); 
+
 let questionList = ['Which hockey player is from Nova Scotia?', 'Which hockey player likes Jimmy Buffet?', 'Which hockey player is an American traitor?', 'Which hockey player is always serious?', 'Which hockey player is a silly-goofy guy according to his interests?']; 
 let answerList = ['Sidney Crosby', 'Patrick Kane', 'Thomas Harley', 'Jonathan Toews', 'Jeff Skinner']; 
 let score = 0; 
